@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BaseProject_Example' do
+  pod 'BaseProject', :path => '../'
+
+  target 'BaseProject_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  end
+end
