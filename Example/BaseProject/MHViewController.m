@@ -7,6 +7,7 @@
 //
 
 #import "MHViewController.h"
+#import <BaseProject/UIView+HUD.h>
 
 @interface MHViewController ()
 
@@ -18,6 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self.view showHudWithActivity:nil];
 }
 
 - (void)didReceiveMemoryWarning
